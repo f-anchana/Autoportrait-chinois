@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exemple::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background: linear-gradient(90deg, #7f00ff, #e100ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+
+}
+
+html,
+body {
+    scroll-snap-type: y mandatory;
+}
+
+.titre-form {
+    text-align: center;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(226, 205, 209, 0.466);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    height: fit-content;
+    /* margin-top: 10%; */
+    font-size: 1.2em;
+    text-decoration: none;
+    z-index: 100;
+    /* position: relative ;
+    top: -600px; */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.103);
+    width: 500px;
+    max-width: 600px;
+}
+
+
+.titre{
+    margin-top: -200px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.liste-analogie {
+    color: rgb(54, 36, 36);
+}
+
+.illus {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.illus img {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+header {
+    background-image: url("imgs/fraises.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.navig {
+    font-size: 1.125rem;
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li a:hover {
+    transform: scale(1);
+    transition: 1s;
+    color: darkred;
+}
+
+li {
+    font-size: 1vw;
+}
+
+.navig a {
+    color: white;
+}
+
+.logo a {
+    color: white;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+}
+
+.navig .nav-links ul li {
+    margin: 0 25px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #830000;
+    transition: width 500ms ease;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(238, 97, 156, 0.822);
+    height: fit-content;
+    scroll-behavior: smooth;
+    padding: 30px 0px 30px 0px;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex {
+    display: flex;
+}
+
+/* ici pop up */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 2px solid salmon;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(255, 243, 221);
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: dashed 2px rgb(255, 178, 169);
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+button {
+    margin: auto;
+    height: 50px;
+    width: 100px;
+}
+
+.btn {
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 20%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: white;
+    background-color: transparent;
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+p:hover {
+    cursor: pointer;
+}
+
+button {
+    background-color: #efb7b7;
+    opacity: 1;
+    border: none;
+    margin-top: 10px;
+}
+
+button:hover {
+    border: white solid 1px;
+    color: white;
+    opacity: 0, 7;
+    transition: 1s;
+}
+
+.send {
+    background-color: rgb(254, 255, 174);
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border: white solid 1px;
+}
+
+.send:hover {
+    background-color: #ff4e83;
+    color: white;
+    transition: 1s;
+    background-color: rgba(134, 0, 123, 0.068);
+    width: fit-content;
+    border: black solid 1px;
+}
+
+.mentions{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    font-size: 0.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        background-position: center;
+    }
+
+    .titre {
+        position: relative;
+        top: 400px;
+    }
+}

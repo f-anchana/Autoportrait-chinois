@@ -1,0 +1,51 @@
+[
+    {
+        "numerotation": "1",
+        "analogie": "un sentiment",
+        "valeursAnalogies": "la bienveillance",
+        "image": "./imgs/smile.jpg",
+        "raison": "je souhaite répandre ce sentiment de bien-être à mon entourage que j'affectionne tant."
+    },
+    {
+        "numerotation": "2",
+        "analogie": "un fruit",
+        "valeursAnalogies": "une clémentine",
+        "image": "./imgs/mandarine.jpg",
+        "raison": "c'est un fruit qui me rappelle la bonne période de l'hiver et de Noël et que c'est mon fruit préféré."
+    },
+    {
+        "numerotation": "3",
+        "analogie": "une plante",
+        "valeursAnalogies": "la fleur d'hibiscus",
+        "image": "./imgs/hibiscus.jpg",
+        "raison": "elle me rappelle une personne chère avec qui j'ai partagé des moments précieux et de plus, elle a beaucoup de vertus sur la santé également, donc je considère cette plante comme une antidote."
+    },
+    {
+        "numerotation": "4",
+        "analogie": "une musique",
+        "valeursAnalogies": "Golden Hour - Jvke",
+        "image": "./imgs/golden.jpg",
+        "raison": "les paroles rappellent une relation saine, et je pense me reconnaître dedans, car j'admire énormément chaque personne qui constitue mon entourage, et pour moi, ces personnes brillent de milles feux !"
+    },
+    {
+        "numerotation": "5",
+        "analogie": "une pâtisserie",
+        "valeursAnalogies": "un fraisier",
+        "image": "./imgs/cake1.jpg",
+        "raison": "c'est une pâtisserie qui est sucré comme mon caractère. De plus, le gâteau est vraiment doux, et c'est pour sa douceur que c'est ma pâtisserie préférée, mais également par les fraises, qui rajoute un petit côté acide pour alterner avec la crème pâtissière."
+    },
+    {
+        "numerotation": "6",
+        "analogie": "un événement ",
+        "valeursAnalogies": "une aurore boréale",
+        "image": "./imgs/aurore.jpg",
+        "raison": "c'est un événement rare par lequel on sera toujours aussi fasciné par sa beauté."
+    },
+    {
+        "numerotation": "7",
+        "analogie": "une couleur",
+        "valeursAnalogies": "le rouge",
+        "image": "./imgs/red.jpg",
+        "raison": "je l'associe à la persévérance dont j'ai fait preuve durant mes années de lycée. Je l'associe également à la détermination dont je peux faire preuve."
+    }
+]
