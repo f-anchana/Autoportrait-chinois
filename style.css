@@ -354,7 +354,7 @@ button:hover {
     font-size: 0.5rem;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1048px) {
     header {
         background-position: center;
     }
